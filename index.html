@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Өмүрбек & Салия — Үйлөнүү үлпөтү</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts с поддержкой кыргызского алфавита (Ө, Ү, Ң) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Forum&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    .font-serif-elegant {
+      font-family: 'Forum', serif;
+    }
+    .font-script {
+      font-family: 'Caveat', cursive;
+    }
+    .font-sans-clean {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-white selection:bg-white selection:text-black">
+
+  <!-- 1. HERO SECTION -->
+  <section class="relative h-screen w-full flex flex-col justify-between items-center text-center overflow-hidden">
+    
+    <!-- Фоновое изображение (IMG_3919.JPG) -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="IMG_3919.JPG" 
+        alt="Өмүрбек жана Салия" 
+        class="w-full h-full object-cover grayscale brightness-75 contrast-110"
+      />
+      <!-- Тёмный градиент -->
+      <div class="absolute inset-0 bg-black/40 bg-gradient-to-b from-black/40 via-transparent to-black/70"></div>
+    </div>
+
+    <!-- Дата -->
+    <div class="relative z-10 pt-16 px-4">
+      <p class="font-sans-clean tracking-[0.3em] text-sm md:text-base uppercase font-medium text-gray-200">
+        17 ОКТЯБРЬ 2025
+      </p>
+    </div>
+
+    <!-- Имена -->
+    <div class="relative z-10 px-4 my-auto flex flex-col items-center">
+      <p class="font-sans-clean text-xs sm:text-sm uppercase tracking-[0.3em] text-gray-300 mb-2">ҮЙЛӨНҮҮ ҮЛПӨТҮ</p>
+      <h1 class="font-serif-elegant text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-wider uppercase leading-tight font-light drop-shadow-md">
+        ӨМҮРБЕК <span class="text-3xl sm:text-5xl md:text-6xl font-serif italic">&amp;</span><br />
+        САЛИЯ
+      </h1>
+      
+      <p class="font-sans-clean tracking-[0.25em] text-xs sm:text-sm md:text-base uppercase text-gray-300 mt-4 font-light">
+        БИШКЕК ШААРЫ
+      </p>
+    </div>
+
+    <!-- Цитата -->
+    <div class="relative z-10 pb-12 px-6 max-w-lg">
+      <p class="font-script text-3xl sm:text-4xl text-gray-200 font-normal leading-relaxed drop-shadow">
+        «Эки жүрөктүн махабаты,<br />бир өмүрдүн башталышы»
+      </p>
+      
+      <div class="mt-8 flex justify-center">
+        <div class="w-[1px] h-8 bg-white/60 animate-pulse"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- РАЗДЕЛИТЕЛЬ -->
+  <div class="bg-black py-6 flex justify-center items-center">
+    <div class="w-[1px] h-12 bg-white/40"></div>
+  </div>
+
+  <!-- 2. ЧАКЫРУУ (ПРИГЛАШЕНИЕ & ЛОКАЦИЯ) -->
+  <section class="bg-black text-white py-16 px-4 flex flex-col items-center text-center">
+    
+    <p class="font-script text-3xl sm:text-4xl text-gray-300 mb-2">
+      Ардактуу коноктор!
+    </p>
+
+    <h2 class="font-serif-elegant text-3xl sm:text-4xl md:text-5xl tracking-[0.2em] uppercase font-light text-gray-100 mb-8">
+      ЧАКЫРУУ
+    </h2>
+
+    <p class="font-serif-elegant text-xl sm:text-2xl text-gray-300 max-w-xl leading-relaxed italic mb-12 px-2">
+      Сиздерди балдарыбыз Өмүрбек менен Салиянын үйлөнүү үлпөт тоюна арналган салтанатка кадырлуу коногубуз болуп кетүүгө чакырабыз!
+    </p>
+
+    <!-- Карточка времени и места -->
+    <div class="w-full max-w-md bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm mb-12 flex flex-col items-center">
+      
+      <!-- Дата -->
+      <div class="mb-6">
+        <p class="font-sans-clean text-xs uppercase tracking-[0.25em] text-gray-400 mb-1">КҮНҮ ЖАНА УБАКТЫСЫ</p>
+        <p class="font-serif-elegant text-2xl sm:text-3xl text-white font-medium">17-ОКТЯБРЬ</p>
+        <p class="font-sans-clean text-sm text-gray-300 tracking-wider mt-1">Саат: 17:00дө</p>
+      </div>
+
+      <div class="w-12 h-[1px] bg-white/20 mb-6"></div>
+
+      <!-- Ресторан -->
+      <div class="mb-8">
+        <p class="font-sans-clean text-xs uppercase tracking-[0.25em] text-gray-400 mb-1">ТОЙ ӨТКӨРҮЛҮҮЧҮ ЖЕР</p>
+        <h3 class="font-serif-elegant text-3xl text-white uppercase tracking-wider mb-2">Ресторан «Аяр»</h3>
+        <p class="font-sans-clean text-xs text-gray-300 tracking-wider">Бишкек ш.</p>
+      </div>
+
+      <!-- Кнопка 2GIS -->
+      <a 
+        href="https://2gis.kg/bishkek/geo/70000001090743355/74.500478,42.875671" 
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 px-6 py-3 border border-white/60 text-xs tracking-[0.2em] uppercase font-sans-clean hover:bg-white hover:text-black transition-all duration-300 rounded-full"
+      >
+        <span>2GIS Картадан көрүү</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+      </a>
+
+    </div>
+
+    <!-- Фотография IMG_3921.JPG в рамке -->
+    <div class="w-full max-w-sm sm:max-w-md p-2 border border-white/20 bg-black/50 shadow-2xl">
+      <div class="overflow-hidden aspect-[4/5] w-full">
+        <img 
+          src="IMG_3921.JPG" 
+          alt="Өмүрбек жана Салия" 
+          class="w-full h-full object-cover grayscale brightness-95 contrast-105"
+        />
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 3. ТОЙ ЭЭЛЕРИ (IMG_3918.JPG) -->
+  <section class="relative bg-black text-white pt-32 pb-16 px-4 flex flex-col items-center text-center overflow-hidden">
+
+    <!-- Верхнее фото -->
+    <div class="absolute top-0 inset-x-0 h-80 z-0">
+      <img 
+        src="IMG_3918.JPG" 
+        alt="Өмүрбек жана Салия" 
+        class="w-full h-full object-cover grayscale brightness-90 contrast-105"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black"></div>
+    </div>
+
+    <!-- Контент: Той ээлери -->
+    <div class="relative z-10 max-w-md w-full flex flex-col items-center mt-36">
+      
+      <div class="mb-6">
+        <p class="font-script text-3xl sm:text-4xl text-gray-200 mb-2">
+          Той ээлери:
+        </p>
+        <h2 class="font-serif-elegant text-3xl sm:text-4xl md:text-5xl tracking-[0.15em] uppercase font-light text-white">
+          Бактыбек &amp; Фарида
+        </h2>
+        <p class="font-sans-clean text-xs tracking-[0.2em] text-gray-400 uppercase mt-4">
+          Сиздерди ак дилибизден күтөбүз!
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- 4. БЕЛЕКТЕР ЖАНА РЕКВИЗИТТЕР (IMG_3920.JPG) -->
+  <section class="bg-black py-16 px-4 flex justify-center items-center">
+
+    <div class="bg-white text-black rounded-3xl max-w-md w-full py-12 px-6 sm:px-8 flex flex-col items-center text-center shadow-2xl">
+      
+      <h2 class="font-serif-elegant text-3xl sm:text-4xl tracking-[0.15em] uppercase font-light leading-tight mb-4">
+        БЕЛЕКТЕР
+      </h2>
+
+      <p class="font-script text-2xl text-gray-700 leading-relaxed max-w-xs mb-8">
+        Биз үчүн эң башкы белек — сиздердин келгениңиздер. Ал эми акчалай белек берүүнү кааласаңыздар, төмөнкү реквизиттерди колдонсоңуздар болот:
+      </p>
+
+      <!-- Банковские реквизиты -->
+      <div class="w-full flex flex-col gap-5 font-sans-clean mb-10">
+        
+        <div>
+          <p class="text-xs uppercase tracking-widest text-gray-500 font-semibold mb-1">
+            БАНК / АЛУУЧУ
+          </p>
+          <p class="text-sm font-medium uppercase tracking-wider text-black">
+            MBANK / Өмүрбек &amp; Салия
+          </p>
+        </div>
+
+        <div>
+          <p class="text-xs uppercase tracking-widest text-gray-500 font-semibold mb-1">
+            КАРТА / ЭСЕП НОМЕРИ
+          </p>
+          <p class="text-base font-bold tracking-[0.15em] text-black">
+            4152 3136 8722 6220
+          </p>
+        </div>
+
+        <div>
+          <p class="text-xs uppercase tracking-widest text-gray-500 font-semibold mb-1">
+            КӨРСӨТМӨ (КОММЕНТАРИЙ)
+          </p>
+          <p class="text-xs tracking-wider text-gray-600">
+            Аты-жөнүңүздү жаза кетиңиз
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Фотография IMG_3920.JPG -->
+      <div class="w-full max-w-xs p-1.5 border border-gray-300 bg-white shadow-sm">
+        <div class="overflow-hidden aspect-[3/4] w-full">
+          <img 
+            src="IMG_3920.JPG" 
+            alt="Өмүрбек жана Салия" 
+            class="w-full h-full object-cover grayscale brightness-95 contrast-105"
+          />
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- 5. RSVP / СИЗДЕРДИ КҮТӨБҮЗ (ФОРМА ПОДТВЕРЖДЕНИЯ) -->
+  <!-- 5. RSVP / СИЗДЕРДИ КҮТӨБҮЗ (ФОРМА ПОДТВЕРЖДЕНИЯ) -->
+<section class="bg-black py-16 px-4 flex flex-col items-center text-center border-t border-white/10">
+  <div class="max-w-md w-full">
+    <p class="font-script text-3xl text-gray-300 mb-1">Жообуңузду күтөбүз</p>
+    <h2 class="font-serif-elegant text-3xl sm:text-4xl tracking-[0.2em] uppercase font-light text-white mb-8">
+      КЕЛҮҮҢҮЗДҮ ЫРАСТАҢЫЗ
+    </h2>
+
+    <form id="rsvpForm" class="flex flex-col gap-4 font-sans-clean text-sm">
+      <input 
+        type="text" 
+        id="guestName"
+        placeholder="Аты-жөнүңүз" 
+        class="w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-white transition-colors"
+        required
+      />
+      
+      <select 
+        id="guestStatus"
+        class="w-full bg-black border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white transition-colors"
+      >
+        <option value="Ооба, кубаныч менен барам">Ооба, кубаныч менен барам</option>
+        <option value="Жубайым/жолдошум менен барам">Жубайым/жолдошум менен барам</option>
+        <option value="Тилекке каршы, бара албайм">Тилекке каршы, бара албайм</option>
+      </select>
+
+      <button 
+        type="submit" 
+        id="submitBtn"
+        class="mt-2 w-full bg-white text-black font-medium py-3 rounded-lg uppercase tracking-[0.2em] text-xs hover:bg-gray-200 transition-colors disabled:opacity-50"
+      >
+        Жөнөтүү
+      </button>
+    </form>
+
+    <!-- Сообщение о статусе отправки -->
+    <p id="formStatus" class="font-sans-clean text-sm mt-4 hidden"></p>
+    
+    <p class="font-sans-clean text-xs text-gray-500 mt-12 tracking-widest uppercase">
+      Өмүрбек &amp; Салия — 2025
+    </p>
+  </div>
+</section>
+
+<!-- Скрипт отправки в Telegram -->
+<script>
+  // Укажите свои данные
+  const TELEGRAM_BOT_TOKEN = '8936084388:AAHW5XfAu_oHqv-tqE2iXXRbEWrfJKHHMTM';
+  const TELEGRAM_CHAT_ID = '8936084388';
+
+  const form = document.getElementById('rsvpForm');
+  const submitBtn = document.getElementById('submitBtn');
+  const formStatus = document.getElementById('formStatus');
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('guestName').value.trim();
+    const status = document.getElementById('guestStatus').value;
+
+    if (!name) return;
+
+    // Блокируем кнопку на время отправки
+    submitBtn.disabled = true;
+    submitBtn.innerText = 'ЖӨНӨТҮЛҮҮДӨ...';
+
+    // Формируем текст сообщения для Telegram
+    const message = `💍 *Жаны жооп (Үйлөнүү үлпөтү)*\n\n` +
+                    `👤 *Аты-жөнү:* ${name}\n` +
+                    `Статус:* ${status}`;
+
+    try {
+      const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          chat_id: TELEGRAM_CHAT_ID,
+          text: message,
+          parse_mode: 'Markdown'
+        })
+      });
+
+      if (response.ok) {
+        formStatus.textContent = 'Рахмат! Сиздин жообуңуз кабыл алынды ✨';
+        formStatus.className = 'font-sans-clean text-sm mt-4 text-green-400';
+        form.reset();
+      } else {
+        throw new Error('Отправка не удалась');
+      }
+    } catch (error) {
+      formStatus.textContent = 'Ката чыкты. Кайрадан аракет кылып көрүңүз же уюштуруучуларга кабарлаңыз.';
+      formStatus.className = 'font-sans-clean text-sm mt-4 text-red-400';
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerText = 'ЖӨНӨТҮҮ';
+      formStatus.classList.remove('hidden');
+    }
+  });
+</script>
+
+</body>
+</html>
